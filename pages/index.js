@@ -1,33 +1,11 @@
 import React from 'react'
-import Navbar from '../sections/Navbar'
 
 const Home = () => {
-    const linkList = [
-        {
-            title: 'Home',
-            url: '/'
-        },
-        {
-            title: 'Jobs',
-            url: '/jobs'
-        },
-        {
-            title: 'Services',
-            url: '/services'
-        },
-        {
-            title: 'Advertising',
-            url: '/advertising'
-        },
-        {
-            title: 'Hobbies',
-            url: '/hobbies'
-        }
-    ]
     return (
-        <div>
-            <Navbar linkList={linkList} />
-            <p>Este es el index</p>
+        <div className='home'>
+            <video autoPlay muted loop playsInline className='home__video'>
+                <source src='videos/home.mp4' type='video/mp4' />
+            </video>
         </div>
     )
 }

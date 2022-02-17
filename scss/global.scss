@@ -1,0 +1,74 @@
+@import './fonts.scss';
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    font-family: Inter;
+}
+
+.page-content {
+    padding-top: 4rem;
+}
+
+/*
+    Colors
+*/
+
+$red: #FF0000;
+$black: #000;
+$white: #FFF;
+
+/*
+    Breakpoints;
+*/
+
+$responsiveSize: 768px;
+.only-mobile {
+    display: none;
+}
+.only-mobile-fl {
+    display: none;
+}
+.only-desktop {
+    display: block;
+}
+.only-desktop-fl {
+    display: flex;
+}
+.only-desktop-tb-cell {
+    display: table-cell;
+}
+  
+@media only screen and (max-width: $responsiveSize) {
+    .only-mobile {
+        display: block;
+    }
+    .only-mobile-fl {
+        display: flex;
+    }
+}
+
+@media (max-width: $responsiveSize) {
+    .only-desktop {
+      display: none !important;
+    }
+    .only-desktop-fl {
+        display: none !important;
+    }
+    .only-desktop-tb-cell {
+        display: none !important;
+    }
+}
+
+
+@import './includes.scss';
