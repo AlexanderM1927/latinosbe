@@ -68,6 +68,10 @@
         width: 100%;
         justify-content: space-between;
     }
+    &__title {
+        @extend %h2;
+        color: $black;
+    }
     &__container {
         padding: 0rem 1.938rem;
     }

@@ -21,3 +21,10 @@
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+.text-d-none {
+    text-decoration: none;
+    a {
+        text-decoration: none;
+    }
+}

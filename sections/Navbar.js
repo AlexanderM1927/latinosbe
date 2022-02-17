@@ -4,9 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faUser);
 library.add(faBars);
+library.add(faXmark);
 
 const NavLink = (props) => {
     return (
@@ -31,12 +33,12 @@ const Navbar = (props) => {
             <div className="header__menu--mobile only-mobile">
                 <div className="burger-menu__container">
                     <div className="burger-menu__header">
-                        <p className="burger-menu__title">Menu</p>
+                        <p className="burger-menu__title">MENU</p>
                         <div className="burger-menu__close" onClick={() => setMenuState(false)}>
-                            X
+                        <FontAwesomeIcon icon={faXmark} />
                         </div>
                     </div>
-                    <ul>
+                    <ul className="text-d-none">
                         {listItems}
                     </ul>
                 </div>
