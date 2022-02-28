@@ -1,13 +1,12 @@
 .header {
     display: flex;
     align-items: center;
-    width: 95%;
+    width: 100%;
     justify-content: space-between;
-    color: $white;
+    color: $black;
+    background: $white;
     position: fixed;
     height: 4rem;
-    left: 2.5%;
-    right: 2.5%;
     z-index: 2;
     &__linklist {
         justify-self: center;
@@ -27,11 +26,14 @@
         }
     }
     a {
-        color: $white;
+        color: $black;
         text-decoration: none;
         cursor: pointer;
     }
     &__burger-btn {
+        @media only screen and (max-width: $responsiveSize) {
+            margin-left: 0.5rem;
+        }
         cursor: pointer;
     }
     &__menu--mobile {
