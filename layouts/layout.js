@@ -22,6 +22,10 @@ const Layout = ({ children }) => {
         {
             title: 'Hobbies',
             url: '/hobbies'
+        },
+        {
+            title: 'Contact US',
+            url: '/contact'
         }
     ]
     return (
