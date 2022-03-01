@@ -3,11 +3,12 @@
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    color: $black;
+    color: $gold;
     background: $white;
     position: fixed;
     height: 4rem;
     z-index: 2;
+    font-weight: 500;
     &__linklist {
         justify-self: center;
         list-style: none;
@@ -26,7 +27,7 @@
         }
     }
     a {
-        color: $black;
+        color: $gold;
         text-decoration: none;
         cursor: pointer;
     }
@@ -43,7 +44,7 @@
         left: 0;
         width: 100%;
         height: 100vh;
-        color: $black;
+        color: $gold;
         z-index: 11;
         & ul {
             padding-inline-start: 0px !important;
@@ -57,7 +58,7 @@
                 padding-bottom: 0.625rem;
                 // text-align: center;
                 & a {
-                    color: $black;
+                    color: $gold;
                 }
             }
         }
@@ -72,7 +73,7 @@
     }
     &__title {
         @extend %h2;
-        color: $black;
+        color: $gold;
     }
     &__container {
         padding: 0rem 1.938rem;

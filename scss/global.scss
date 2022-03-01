@@ -14,19 +14,33 @@ body {
     margin: 0;
     min-height: 100%;
     font-family: Inter;
+    background: #000000;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .page-content {
-    padding-top: 4rem;
+    padding-top: 5rem;
 }
 
 /*
     Colors
 */
 
-$red: #FF0000;
+$red: #e2040c;
 $black: #000;
 $white: #FFF;
+$lightRed: #FBEEE6;
+$yellow: #ffcc01;
+$gold: #c8a118;
+
+.color-red{ color: #e2040c; };
+.color-black{ color: #000; };
+.color-white{ color: #FFF; };
+.color-lightRed{ color: #FBEEE6; };
+.color-yellow{ color: #ffcc01; };
+.color-gold{ color: #c8a118; };
 
 /*
     Breakpoints;

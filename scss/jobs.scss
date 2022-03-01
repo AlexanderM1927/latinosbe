@@ -1,0 +1,38 @@
+.job {
+    border-radius: 0.5rem;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,.14), 0 0px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    .head {
+        position: relative;
+        img {
+            width: 100%;
+            border-radius: 0.5rem 0.5rem 0rem 0rem;
+        }
+        .date {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border-radius: 0.5rem;
+            padding: 0.2rem;
+        }
+    }
+    .info {
+        padding: 0.8rem 0.5rem;
+        @extend %p;
+        .title {
+            font-weight: 500;
+        }
+    }
+}
+
+.jobs {
+    h2 {
+        span {
+            float: right;
+        }
+    }
+}

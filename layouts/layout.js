@@ -28,7 +28,6 @@ const Layout = ({ children }) => {
         <div>
             <Navbar linkList={linkList} />
             {children}
-            <footer>This is the footer</footer>
         </div>
     )
 }
